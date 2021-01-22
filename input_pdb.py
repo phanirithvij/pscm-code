@@ -143,8 +143,7 @@ def valid_pdb(filename: str):
                 break
         return False
 
-
-if __name__ == '__main__':
+def main():
     if len(sys.argv) < 2:
         print("Usage: python this.py <filename.pdb>")
         exit(1)
@@ -155,3 +154,8 @@ if __name__ == '__main__':
         print(frames[0].molecules[1])
         print()
         print(frames[0].atoms[0])
+
+
+
+if __name__ == '__main__':
+    main()
